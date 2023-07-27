@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: Gelasio;
+    src: url('../fonts/Gelasio/Gelasio-Medium.ttf');
+}
+
+/* ----------------------- danh mục sản phẩm -----------------------*/
+.best-selling-product {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.slider {
+    position: relative;
+    margin-top: 5%;
+}
+
+.type-product {
+    margin-top: 3%;
+}
+
+.see-more-type-product {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    overflow: hidden;
+    flex: 0 0 25%;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-rows: 300px auto auto;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 250px;
+    height: 250px;
+}
+
+.grid-item h3,
+.grid-item p {
+    margin: 0;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-slide img {
+    margin: auto;
+}
+
+.prev-arrow,
+.next-arrow {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.next-arrow {
+    margin-right: 10px;
+}
+
+/* ----------------------- danh mục sản phẩm -----------------------*/
+
+/* ----------------------- contact  -----------------------*/
+.contact-wrap {
+    margin-top: 2%;
+}
+
+.contact-wrap img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.contact1-form {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+.left-contact {
+    position: absolute;
+    top: 10%;
+}
+
+/* ----------------------- contact  -----------------------*/
+
+/* ----------------------- typical project  -----------------------*/
+.typical-project {
+    margin-top: 5px;
+    background-color: #e6e6e6;
+}
+
+.title-typical-project {
+    font-size: 40px;
+    text-align: center;
+}
+
+.box-video-1,
+.box-video-2,
+.box-video-3 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* ----------------------- typical project  -----------------------*/
+
+/* ----------------------- our partner  -----------------------*/
+.our-partner {
+    margin-top: 5px;
+}
+
+.title-our-partner {
+    font-size: 40px;
+    text-align: center;
+}
+
+.title-slogan-our-partner {
+    text-align: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.circle img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+/* ----------------------- our partner  -----------------------*/
+
+/* ----------------------- footer -----------------------*/
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex-basis: 33.33%;
+}
+
+.footer-logo img {
+    width: 50%;
+}
+
+.footer-name-company {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.footer-content {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.info-company,
+.services-company {
+    margin-left: 15%;
+}
+
+.services-company ol li {
+    margin-top: 10px;
+}
+
+.mastercard img {
+    width: 20%;
+}
+
+/* ----------------------- footer -----------------------*/
+
+/* ----------------------- back to top  -----------------------*/
+#backtotop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f93d3d;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.show-button-back-to-top {
+    display: block;
+}
+
+/* ----------------------- back to top  -----------------------*/
+
+@media screen and (max-width: 992px) {
+    #right-topbar {
+        display: none;
+    }
+
+    #left-topbar ul li:nth-child(2) {
+        display: none;
+    }
+
+    #left-topbar ul li:nth-child(3) {
+        display: none;
+    }
+
+    #left-topbar ul li:first-child {
+        display: block;
+        margin: auto;
+    }
+
+    #artboard {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    #left-topbar ul li a,
+    #right-topbar ul li a {
+        font-size: 12px;
+    }
+
+    #slogan {
+        font-size: 480%;
+    }
+
+    .wrap-box {
+        width: 82%;
+    }
+
+    .title-1 {
+        left: 8%;
+    }
+
+    .title-2 {
+        left: 46%;
+    }
+
+    .watch_more-1 {
+        left: 8%;
+    }
+
+    .watch_more-2 {
+        left: 46%;
+    }
+
+    .watch_more {
+        margin-top: 7%;
+    }
+
+    .title-all-3 {
+        inline-size: 23%;
+    }
+
+    .quality-img-2 {
+        left: 38.5%;
+    }
+
+    .quality-img-3 {
+        left: 69%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #menu {
+        width: 64%;
+    }
+
+    #slogan {
+        font-size: 370%;
+    }
+
+    #logo img {
+        width: 25%;
+    }
+
+    #title {
+        font-size: 14px;
+    }
+
+    .wrap-box {
+        margin-top: 10px;
+    }
+
+    .size-box-detail {
+        width: 190px;
+        height: 70px;
+    }
+
+    .quality {
+        width: 40px;
+        height: 40px;
+        top: 84%;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .watch_more {
+        font-size: 12px;
+        margin-top: 8%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .box-video-1 iframe,
+    .box-video-2 iframe,
+    .box-video-3 iframe {
+        width: 205px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        width: 100%;
+    }
+}
