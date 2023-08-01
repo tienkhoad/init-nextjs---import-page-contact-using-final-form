@@ -26,7 +26,7 @@ const MainContent = () => {
                         </li>
                         <li className="menu-content sub-menu">
                             <a className='font-montserrat' href="#">SẢN PHẨM</a>
-                            <ul className="submenu-content">
+                            <ul className="submenu-content font-montserrat">
                                 <li><a href="#">Sản phẩm A</a></li>
                                 <li><a href="#">Sản phẩm B</a></li>
                                 <li><a href="#">Sản phẩm C</a></li>
