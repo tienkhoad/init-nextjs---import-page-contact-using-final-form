@@ -8,7 +8,6 @@ import type { Metadata } from 'next';
 import DynamicMenu from '@/component/dynamicmenu/page';
 import TopHeader from '@/component/topheader/page';
 import MainContent from '@/component/maincontent/page';
-import Slider from 'react-slick';
 
 
 export const metadata: Metadata = {
